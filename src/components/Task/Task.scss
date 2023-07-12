@@ -1,0 +1,11 @@
+@import '__setting.scss';
+li.task-item{
+    background: white;
+    padding: $gap;
+    color: black;
+    &:not(:last-child){
+      margin-bottom: $gap;
+    }
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }

@@ -1,0 +1,42 @@
+@import '__setting.scss';
+.column{
+    flex: 0 0 auto;
+    width: 300px;
+    &:not(:first-child){
+      margin-left: $gap;
+    }
+    >*{
+      background: $bg-list;
+      color: white;
+      padding: 0 $gap;
+    }
+    .header{
+      font-size: 20px;
+      border-top-left-radius: $gap;
+      border-top-right-radius: $gap;
+      font-weight: 700;
+      height: $column-header-h;
+      line-height: $column-header-h;
+    }
+    ul.task-list{
+        list-style: none;
+        max-height: 350px;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+          -webkit-appearance: none;
+        }
+        &::-webkit-scrollbar:vertical{
+          width: 10px;
+        }
+        &::-webkit-scrollbar-thumb{
+          background-color: #d3d3d3;
+          border-right: 3px solid $bg-list;
+        }
+      }
+    .footer{
+      border-bottom-left-radius: $gap;
+      border-bottom-right-radius: $gap;
+      height: $column-footer-h;
+      line-height: $column-footer-h;
+    }
+  }
