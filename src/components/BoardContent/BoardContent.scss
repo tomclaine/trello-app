@@ -11,11 +11,11 @@
       width: 10px;
     }
     &::-webkit-scrollbar-thumb{
-      background-color: #DA70D6;
+      background-color: rgba(0, 0, 0, 0.204);
       border-radius: 5px;
     }
     &::-webkit-scrollbar-track{
-      background-color: rgba(0, 0, 0, 0.204);
+      background-color: #DA70D6;
       margin: 0 $gap;
       border-radius: 5px;
     }
