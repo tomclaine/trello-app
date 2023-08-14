@@ -2,4 +2,44 @@
 
 .navbar{
     padding: 0 $gap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn-add-board{
+      color: white;
+      background: rgba(0, 0, 0, 0.275);
+      padding: $gap;
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: 3px;
+      &:hover{
+        background: black;
+      }
+    }
+    .search-area{
+      input{
+        padding: $gap;
+        outline: none;
+        font-size: 16px;
+        border:1px solid rgba(0, 0, 0, 0.275);
+        background: rgba(0, 0, 0, 0.275);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: white;
+        &::placeholder{
+          color: rgb(212, 212, 212);
+        }
+      }
+      button{
+        padding: $gap;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: 1px solid black;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
   }

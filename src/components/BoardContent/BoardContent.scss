@@ -1,7 +1,7 @@
 @import '__setting.scss';
 .board-content{
     padding: 0 $gap;
-    margin-bottom: $gap;
+    margin: $gap 0;
     overflow-x: auto;
     display: flex;
     &::-webkit-scrollbar{
@@ -19,4 +19,15 @@
       margin: 0 $gap;
       border-radius: 5px;
     }
+    
+  .current {
+      border: 1px dashed white;
+  } 
+  .column-drop-preview {
+    background-color: rgba(107, 107, 107, 0.1);
+    border: 1px dashed rgb(82, 82, 82);
+    // margin: 5px 45px 5px 5px;
+    border-radius: 5px;
   }
+}
+  

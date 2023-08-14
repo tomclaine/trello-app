@@ -1,12 +1,11 @@
-import React from "react"
 import './Header.scss'
 
-function Header(){
-    return(
+function Header() {
+  return (
     <header>
-        <div className='logo'>TrelloApp</div>
+      <div className='logo'><i className='fa fa-heart icon-heart'/><i className='fa fa-heart icon-heart'/><i className='fa fa-heart icon-heart'/> TrelloApp <i className='fa fa-heart icon-heart'/><i className='fa fa-heart icon-heart'/><i className='fa fa-heart icon-heart'/></div>
     </header>
-    )
+  )
 }
 
 export default Header

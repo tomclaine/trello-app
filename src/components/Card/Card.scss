@@ -1,15 +1,19 @@
 @import '__setting.scss';
-li.card-item{
-    background: white;
+
+.card-item{
+    background: white;  
     padding: $gap;
     color: black;
-    &:not(:last-child){
-      margin-bottom: $gap;
-    }
+    cursor: pointer;
+    // &:not(:last-child){
+    //   margin-bottom: $gap;
+    // }
+    margin: $gap 0;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     img.card-cover{
       width: 100%;
       height: 100%;
+      border-radius: 5px;
     }
   }

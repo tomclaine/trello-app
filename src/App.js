@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.scss';
-import Header from 'components/Header/Header';
-import Navbar from 'components/Navbar/Navbar';
-import BoardContent from 'components/BoardContent/BoardContent';
+
+import './App.scss'
+import Header from 'components/Header/Header'
+import Navbar from 'components/Navbar/Navbar'
+import BoardContent from 'components/BoardContent/BoardContent'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <BoardContent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

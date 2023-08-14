@@ -1,16 +1,19 @@
 @import '__setting.scss';
+
 .column{
     flex: 0 0 auto;
     width: 300px;
-    &:not(:first-child){
-      margin-left: $gap;
-    }
+    // &:not(:first-child){
+    //   margin-left: $gap;
+    // }
+    margin: 0 $gap;
     >*{
       background: $bg-list;
       color: white;
       padding: 0 $gap;
     }
-    .header{
+    header{
+      cursor: pointer;
       font-size: 20px;
       border-top-left-radius: $gap;
       border-top-right-radius: $gap;
@@ -18,25 +21,45 @@
       height: $column-header-h;
       line-height: $column-header-h;
     }
-    ul.card-list{
-        list-style: none;
-        max-height: 350px;
-        overflow-y: auto;
-        &::-webkit-scrollbar{
-          -webkit-appearance: none;
-        }
-        &::-webkit-scrollbar:vertical{
-          width: 10px;
-        }
-        &::-webkit-scrollbar-thumb{
-          background-color: #d3d3d3;
-          border-right: 3px solid $bg-list;
+    .card-list{
+    //   list-style: none;  
+      max-height: 350px;
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+        -webkit-appearance: none;
+      }
+      &::-webkit-scrollbar:vertical{
+        width: 10px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: #d3d3d3;
+        border-right: 3px solid $bg-list;
+      }
+      .card-ghost {
+        transition: transform 0.18s ease;
+        transform: rotateZ(5deg)
+      }
+      
+      .card-ghost-drop{
+        transition: transform 0.18s ease-in-out;
+        transform: rotateZ(0deg)
+      }
+      .card-drop-preview {
+        background-color: rgba(150, 150, 200, 0.1);
+        border: 1px dashed #abc;
+        margin: 5px;
+      }
+    }
+    footer{
+        cursor: pointer;
+        border-bottom-left-radius: $gap;
+        border-bottom-right-radius: $gap;
+        height: $column-footer-h;
+        line-height: $column-footer-h;
+        font-size: 14px;
+        transition: all .3s;
+        &:hover{
+          color: #c3c3c3;
         }
       }
-    .footer{
-      border-bottom-left-radius: $gap;
-      border-bottom-right-radius: $gap;
-      height: $column-footer-h;
-      line-height: $column-footer-h;
-    }
-  }
+}

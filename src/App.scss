@@ -10,5 +10,8 @@
   display: grid;
   grid-template-rows: 80px 60px 1fr;
   background: #EE82EE;
-  
+  .icon{
+    font-size: 14px;
+    margin-right: 5px;
+  }
 }
